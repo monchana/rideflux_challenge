@@ -5,6 +5,8 @@
 
 라벨은 Pedestrian, Vehicle, Bike가 있으며, Train, Validation, Test 데이터가 제공된다.
 
+이어질 설명에서 `변경한다`라는 말이 있을 경우, 해당 파일에서 `TODO`를 찾으면 된다.
+
 ------
 
 ## 0. Datasets
@@ -12,7 +14,7 @@
 데이터셋은 크게 3가지로 구분된다. 주최측에서 제공한 데이터 (이하 Rideflux Data), MSCOCO 그리고 CityScapes 데이터셋이다.
 
 - RideFlux : 주어진 Train, Val, Test 데이터 사용
-    - `utils/picsize.py`를 통해 Annotation의 이미지 크기와 실제 이미지 크기와 다른 이미지를 제외한다.
+    - `utils/picsize.py`를 통해 Annotation의 이미지 크기와 실제 이미지 크기와 다른 이미지의 Annotation을 변경한다.
 - [MSCOCO](https://cocodataset.org/#download) : 2017 Train, Val, Test 데이터 다운로드
 - [CityScapes](https://www.cityscapes-dataset.com) : LeftImg8bit - gtFine 데이터 다운로드
 
@@ -68,4 +70,4 @@ Fork된 [ByteTrack](git@github.com:monchana/ByteTrack.git)를 이용해 DyHead�
 
 Object Tracking을 완료하면 [MOT](https://motchallenge.net) 형식으로 파일이 생성된다.
 
-`utils/mo2rideflux.py` 파일로 이를 `RideFlux` Format에 맞게 변경해 주면 된다. 마찬가지로 디렉토리 위치 등은 파일 내에서 설정하면 된다. 
+`utils/mot2rideflux.py` 파일로 이를 `RideFlux` Format에 맞게 변경해 주면 된다. 마찬가지로 디렉토리 위치 등은 파일 내에서 설정하면 된다. 
