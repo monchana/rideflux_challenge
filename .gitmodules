@@ -1,0 +1,6 @@
+[submodule "ByteTrack"]
+	path = ByteTrack
+	url = git@github.com:monchana/ByteTrack.git
+[submodule "DynamicHead"]
+	path = DynamicHead
+	url = git@github.com:monchana/DynamicHead.git
